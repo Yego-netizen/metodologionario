@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodologionário UEPB - Grafo Interativo D3.js (75 Verbetes)</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- D3.js v7 CDN -->
+  <script defer src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <div class="header">
+      <h1>Metodologionário</h1>
+      <p>Grafo Interativo de Conceitos</p>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Buscar verbete (ex: Design Science, Amostra, Causalidade)...">
+    </div>
+    <div class="details-container" id="details">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Clique em qualquer nó do grafo para visualizar a explicação, exemplo didático, cuidados de interpretação e referências ABNT.</p>
+    </div>
+  </div>
+
+  <div id="graph-container">
+    <div class="legend">
+      <div style="font-weight: 700; margin-bottom: 8px; color: #f8fafc;">Campos Temáticos</div>
+      <div class="legend-item"><div class="legend-color" style="background: #38bdf8;"></div> Fundamentos</div>
+      <div class="legend-item"><div class="legend-color" style="background: #c084fc;"></div> Amostragem & Mensuração</div>
+      <div class="legend-item"><div class="legend-color" style="background: #4ade80;"></div> Análise de Dados</div>
+      <div class="legend-item"><div class="legend-color" style="background: #fbbf24;"></div> Métodos em Computação</div>
+      <div class="legend-item"><div class="legend-color" style="background: #f43f5e;"></div> Redação & Normalização</div>
+      <div class="legend-item"><div class="legend-color" style="background: #a855f7;"></div> Epistemologia & Ética</div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
